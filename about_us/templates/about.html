@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-this is about page
+<section class="row justify-content-center align-items-center mt-5 gap-5">
+    <div class="about-img col-md-4">
+        <img class="img-fluid img-thumbnail rounded-circle" src="{% static 'images/ahsan.jpeg' %}" alt="">
+    </div>
+    <div class="about-text col-md-5 ">
+        <h1 class="text-center">About US</h1> <hr>
+        <h2 class="mb-3">We Cook Food Better..</h2>
+        <h5>I am CEO of AHM RESTAURANT</h5>
+        <p>We service food since 1996.We have lot of items like Beef,Chicken,Dessert,Lamb,Miscellaneous,Pasta.For better and tested food contact with us.We also provide Home Delivery service.So you can eat best food from Home.</p>
+        <br>For more information contact with us..
+    </div>
+</section>
 {% endblock content %}
