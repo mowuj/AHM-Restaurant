@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+AHM Home
+{% endblock title %}
 {% block content %}
 <div class="section row d-flex justify-content-center align-items-center mt-5">
     <div class="text-side col-md-5 px-4">
@@ -8,7 +12,7 @@
 <br>
 “Test our Pizza and pasta and also our food items.”</p>
 <p>For more info about our Food Visit Show Items page</p>
-<button class="btn btn-info">Order Now</button>
+<button class="btn btn-info px-4">Order Now</button>
     </div>
     <div class="img-side col-md-6 px-4">
         <img class="img-fluid rounded-circle" src="{% static "images/restaurant2.jpg" %}" alt="">

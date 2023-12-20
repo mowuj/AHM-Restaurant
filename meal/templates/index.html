@@ -1,21 +1,24 @@
 {% extends 'base.html' %}
-
+{% block title %}
+AHM Items
+{% endblock title %}
 
 {% block content %}
 
 
 <div class="mb-5 container">
-    <h1 class="text-center my-5">OUR ITEMS</h1>
+    <h1 class="text-center my-3">OUR ITEMS</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
 {% for i in data %}
   <div class="col">
     <div class="card">
       <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h3 class="card-title">{{i.strCategory}}</h3>
         <h5>ID: {{i.idCategory}}</h5>
+        <h3 class="card-title">{{i.strCategory}}</h3>
+        
         <p>{{i.strCategoryDescription | truncatewords:10}}</p>
-        <button class="btn btn-info mx-auto">Order Now</button>
+        <button class="btn btn-info mx-auto px-3">Order Now</button>
       </div>
     </div>
   </div>
